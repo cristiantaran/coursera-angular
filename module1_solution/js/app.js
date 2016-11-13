@@ -46,7 +46,8 @@ function LunchCheckController($scope) {
       var count = 0;
 
       for (var i = 0; i < stringArray.length; i++) {
-        if (stringArray[i]) {
+
+        if (/\S/.test(stringArray[i])) {
           count++;
         }
       }
